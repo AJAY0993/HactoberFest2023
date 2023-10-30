@@ -1,0 +1,105 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300;400&display=swap');
+
+:root {
+    --font-family-primary: 'Roboto', sans-serif;
+    --font-family-secondary: 'Playfair Display', serif;
+    --color-primary: #F3EED9;
+    --color-secondary: #824936;
+    --color-tertiary: #222C2A;
+
+}
+
+body {
+    color: #F3EED9;
+}
+
+.container {
+    max-width: 1128px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.ff-primary {
+    font-family: var(--font-family-primary);
+}
+
+.ff-secondary {
+    font-family: var(--font-family-secondary);
+}
+
+p {
+    font-size: 21px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.hero {
+    background: var(--color-primary);
+}
+
+.hero--text {
+    min-height: 660px;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero span {
+    letter-spacing: 3px;
+    color: var(--color-tertiary);
+}
+
+.hero--title {
+    color: var(--color-secondary);
+    font-family: var(--font-family-secondary);
+    font-size: 60px;
+
+}
+
+.col+.col {
+    margin-left: 2em;
+}
+
+.two .section__title {
+    color: var(--color-secondary);
+}
+
+.two p {
+    color: var(--color-tertiary);
+}
+
+.three {
+    background: var(--color-tertiary);
+}
+
+.four {
+    background: var(--color-secondary);
+}
+
+.section__title {
+    font-size: 36px;
+    margin-bottom: 1em;
+}
